@@ -1,0 +1,75 @@
+{
+    "author": "fengwen",
+    "description": "FENGWEN WIKI",
+    "extension": null,
+    "generator": "site",
+    "links": {
+        "sharing": {
+            "all": null,
+            "facebook": null,
+            "google": null,
+            "twitter": null,
+            "weibo": null
+        },
+        "sidebar": {
+            "github": "http://honghongwen.github.com"
+        }
+    },
+    "output": null,
+    "pdf": {
+        "fontSize": 12,
+        "footerTemplate": null,
+        "headerTemplate": null,
+        "margin": {
+            "bottom": 36,
+            "left": 62,
+            "right": 62,
+            "top": 36
+        },
+        "pageNumbers": false,
+        "paperSize": "a4"
+    },
+    "plugins": [
+        "-livereload",
+        "-sharing",
+        "expandable-chapters-small",
+        "insert-logo",
+        "code",
+        "search-plus",
+        "hide-element",
+        "splitter",
+        "mermaid-gb3",
+        "lightbox",
+        "-copy-code-button",
+        "-tbfed-pagefooter",
+        "-valine"
+    ],
+    "title": "FENGWEN wiki",
+    "variables": {},
+    "pluginsConfig": {
+        "hide-element": {
+            "elements": [".gitbook-link"]
+        },
+        "insert-logo": {
+            "url": "/images/subscribe.png",
+            "style": "background: none; max-height: 120px; min-height: 120px"
+        },
+        "anchor-navigation-ex": {
+            "showLevel": false, 
+            "showGoTop": false 
+        },
+        "lightbox": {
+            "includeJQuery": false,
+            "sameUuid": true,
+            "options": {
+                "resizeDuration": 0,
+                "wrapAround": false
+            }
+        },
+        "tbfed-pagefooter": {
+            "copyright":"Copyright ©Sinfor",
+            "modify_label": "更新时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        }
+    }
+}
