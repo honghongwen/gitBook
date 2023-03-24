@@ -339,8 +339,8 @@ public class RClient {
 ### 3.3 半包问题
 > 运行上面代码，可以看到如下输出，我明明只输入了几个字符，而输出中却输出了一大串(沾包)，有时候还输出了乱码(半包，破碎的数据包)，这些统称为半包问题。
 
-![netty1](../../images/netty1.png)
-![netty2](../../images/netty2.png)
+![netty1](/images/netty1.png)
+![netty2](/images/netty2.png)
 
 ## 4. Netty
 
@@ -356,7 +356,7 @@ public class RClient {
 ### 4.3 说明
 > 以上几个组件就是编程中最常用的组件了，混个眼熟，然后看下面这张处理流程图。大概就能搞清楚各个组件的作用了。
 
-![netty](../../images/netty.png)
+![netty](/images/netty.png)
 
 
 > 当然，netty中功能肯定不止这些，比如长连接的实现、怎么解决半包问题、自定义协议、内存零拷贝、各种内置的handler等等。都需要具体去学习，上图只是简单的解析了他的工作原理，仅此而已。
