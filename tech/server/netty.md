@@ -1,7 +1,4 @@
 # <center> Netty的一些使用</center>
-author: 冯文 
-<br>
-date: 2022-05-21
 
 <hr>
 
