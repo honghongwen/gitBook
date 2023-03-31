@@ -44,7 +44,7 @@ public void swap(int x, int y) {
         x ^= y;
 }
 ```
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/454950/1635390302736-efc5ae1e-edf3-477a-9795-0b20f8bb6c1d.png#clientId=u0f1f3dc3-8290-4&from=paste&height=556&id=u7740d936&name=image.png&originHeight=556&originWidth=921&originalType=binary&ratio=1&size=52088&status=done&style=none&taskId=u648fce74-5663-462e-84d4-8196d6ebe1b&width=921)
+![image](/images/bit1.png)
 
 ### 4. 位移说明
 > 因为计算机用补码运算，所以正数无论是有符号、无符号位移结果都一致。

@@ -39,4 +39,4 @@ public class SemaphoreTest {
 }
 ```
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/454950/1632642478838-cb8d9825-d7c9-4bf3-a73c-a7bf85fcbb16.png#clientId=ue1929891-386e-4&from=paste&height=931&id=u7778fb83&name=image.png&originHeight=931&originWidth=1814&originalType=binary&ratio=1&size=166678&status=done&style=none&taskId=u72442b7c-6827-41c8-bf05-363fb49109f&width=1814)
+![image.png](/images/semaphore.png)

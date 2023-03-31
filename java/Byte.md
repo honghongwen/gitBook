@@ -26,7 +26,7 @@
 
 
 ### 2. Java的二进制也是用补码表示的
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/454950/1635328611706-72f4e527-6e1a-446a-ad88-d59c09fe88a9.png#clientId=u52f31a7e-6933-4&from=paste&height=707&id=ub7c69f75&name=image.png&originHeight=707&originWidth=1105&originalType=binary&ratio=1&size=46194&status=done&style=none&taskId=u5533a659-1c9e-4ed6-a37c-2abde3d5851&width=1105)
+![image](/images/byte1.png)
 
 ### 3. 为什么是-128～127
 > 因为一个字节8位，可以有2的八次方个排列组合 也就是256。可以代表256个数。

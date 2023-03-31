@@ -44,11 +44,11 @@ public class StatController {
 ```shell
 ab -n 10000 -c 1 localhost:8080/stat/add
 ```
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/454950/1664244579045-874aae79-dfe5-4dd6-8739-ba0de70b14a5.png#averageHue=%23050302&clientId=u9738b210-01d4-4&from=paste&height=623&id=u44ccf82b&name=image.png&originHeight=623&originWidth=700&originalType=binary&ratio=1&rotation=0&showTitle=false&size=34003&status=done&style=none&taskId=udac7e834-7f47-4dd0-899e-24f565ac412&title=&width=700)
+![image.png](/images/ab1.png)
 ```shell
 curl localhost:8080/stat -i
 ```
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/454950/1664244630653-1f1100f6-c587-48e3-8610-0c5cb585a1cb.png#averageHue=%23090706&clientId=u9738b210-01d4-4&from=paste&height=155&id=u8ebe8719&name=image.png&originHeight=155&originWidth=662&originalType=binary&ratio=1&rotation=0&showTitle=false&size=10336&status=done&style=none&taskId=u0c29ff28-bdcc-434b-b8a3-3edf5278968&title=&width=662)
+![image.png](/images/ab2.png)
 
 ##### ！可以看到并发为1的情景下结果是无问题的
 
@@ -57,10 +57,10 @@ curl localhost:8080/stat -i
 ```shell
 ab -n 10000 -c 1 localhost:8080/stat/add
 ```
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/454950/1664244722203-7dac1fe2-6be0-4616-bf5c-71a90cc29401.png#averageHue=%23060403&clientId=u9738b210-01d4-4&from=paste&height=641&id=u64fab532&name=image.png&originHeight=641&originWidth=637&originalType=binary&ratio=1&rotation=0&showTitle=false&size=34790&status=done&style=none&taskId=uc1de45ea-f2d8-4d4f-a2cc-44ea1908334&title=&width=637)
+![image.png](/images/ab3.png)
 > 可以看到，在10个并发压测10000个请求。总耗时几乎快了一倍
 
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/454950/1664244792490-690de295-f87a-4f64-b840-e5c512a6fcd0.png#averageHue=%230c0b0a&clientId=u9738b210-01d4-4&from=paste&height=205&id=u9eaa69eb&name=image.png&originHeight=205&originWidth=796&originalType=binary&ratio=1&rotation=0&showTitle=false&size=13340&status=done&style=none&taskId=uc6a3ae60-d323-45b3-8aa4-9d5907d7962&title=&width=796)
+![image.png](/images/ab4.png)
 ##### 但是结果是错误的
 
 
@@ -68,8 +68,8 @@ ab -n 10000 -c 1 localhost:8080/stat/add
 > 第一个想到的肯定是加悲观锁。这样直接就能解决结果不一致的问题。
 
 
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/454950/1664249651839-06e4426b-ac08-4703-b580-9ba1768106c3.png#averageHue=%23070605&clientId=u9738b210-01d4-4&from=paste&height=683&id=u603d7a63&name=image.png&originHeight=683&originWidth=705&originalType=binary&ratio=1&rotation=0&showTitle=false&size=38177&status=done&style=none&taskId=uecf163fb-9432-4c36-a7c9-edbf21a6f6f&title=&width=705)
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/454950/1664249666069-b1d0f781-c2cd-4f6e-98be-3771deb8fc61.png#averageHue=%230d0c0b&clientId=u9738b210-01d4-4&from=paste&height=199&id=ud3c33318&name=image.png&originHeight=199&originWidth=789&originalType=binary&ratio=1&rotation=0&showTitle=false&size=11843&status=done&style=none&taskId=ubb654892-70e2-4cc3-9765-d80ed9db492&title=&width=789)
+![image.png](/images/ab5.png)
+![image.png](/images/ab6.png)
 > 可以看到，解决了数据的正确性问题，但是带来的新问题是，锁是非常耗时的操作，并且在数据量越大的情况下越耗时。所以锁其实是个很危险的操作，不要轻易的去加锁。吞吐量出问题，队列挂掉（队列满了）。
 
 

@@ -12,7 +12,7 @@
 java [-options] class [args...]
 ```
 常用使用方法如下，-cp指定class文件位置然后加上类名再加参数运行main方法。
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/454950/1633855918761-3d7baa7f-8472-443c-bad8-83c9ff46885e.png#clientId=u5f8ec0a5-4899-4&from=paste&height=1080&id=uc3963b91&name=image.png&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&size=139681&status=done&style=none&taskId=ub3586f13-d15e-4d9c-ae78-ce42627a3fb&width=1920)
+![image](/images/go1.png)
 ### 2. 代码实现
 > 由于是写jvm的功能，所以换了个语言，本人选用的是Golang。
 
@@ -108,4 +108,4 @@ func startJVM(cmd *Cmd) {
 > - ./jvm -help 正确输出了tips方法提示
 > - ./jvm -cp class classname args... 先解析出参数。
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/454950/1633860026569-a90dc0aa-2220-4599-af3e-a54ec69c579a.png#clientId=ucb4dde2d-72b8-4&from=paste&height=1080&id=u949897b5&name=image.png&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&size=167894&status=done&style=none&taskId=u017dab04-5a2f-44d4-a666-2c6b3e0ae84&width=1920)
+![image](/images/go2.png)

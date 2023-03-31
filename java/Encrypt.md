@@ -5,9 +5,11 @@
 
 > 原理：将字符转成ascii码对应的索引，然后二进制，将二进制每6bit一组，然后找到base64码表的索引。对应的就是他编码后的字符了。
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/454950/1634734090770-bbef3345-77bd-4f24-9217-8369c23b1396.png#clientId=u5e57a78c-eaad-4&from=paste&height=1187&id=u9d13e4c5&name=image.png&originHeight=1187&originWidth=1008&originalType=binary&ratio=1&size=165292&status=done&style=none&taskId=u45d70beb-731f-4191-84d6-eb5745c172c&width=1008)
+![image](/images/encrypt1.png)
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/454950/1634734130584-190e93fd-f132-4a67-9bfb-a7ba5073a393.png#clientId=u5e57a78c-eaad-4&from=paste&height=594&id=u55c2a1c4&name=image.png&originHeight=594&originWidth=879&originalType=binary&ratio=1&size=67150&status=done&style=none&taskId=u27d931af-03f3-48ab-9da2-21febcffbdc&width=879)
+
+![image](/images/encrypt2.png)
+
 
 如 YNX 这三个字符转换过程如下
 
