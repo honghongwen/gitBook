@@ -1,0 +1,808 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>HashMap · FENGWEN WIKI</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="fengwen">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="BitCompute.html" />
+    
+    
+    <link rel="prev" href="ArrayList.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://honghongwen.github.io/webBook" target="_blank" class="custom-link">回到首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    技术文档
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../docs/git.html">
+            
+                <a href="../docs/git.html">
+            
+                    
+                    Git指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../docs/rabbitMq.html">
+            
+                <a href="../docs/rabbitMq.html">
+            
+                    
+                    RabbitMq的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../docs/netty.html">
+            
+                <a href="../docs/netty.html">
+            
+                    
+                    Netty的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../docs/code.html">
+            
+                <a href="../docs/code.html">
+            
+                    
+                    编程的智慧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="ArrayList.html">
+            
+                <a href="ArrayList.html">
+            
+                    
+                    ArrayList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="HashMap.html">
+            
+                <a href="HashMap.html">
+            
+                    
+                    HashMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="BitCompute.html">
+            
+                <a href="BitCompute.html">
+            
+                    
+                    BitCompute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Bit.html">
+            
+                <a href="Bit.html">
+            
+                    
+                    Bit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="BitMap.html">
+            
+                <a href="BitMap.html">
+            
+                    
+                    BitMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Byte.html">
+            
+                <a href="Byte.html">
+            
+                    
+                    Byte
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Encrypt.html">
+            
+                <a href="Encrypt.html">
+            
+                    
+                    Encrypt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="ImplementsJava.html">
+            
+                <a href="ImplementsJava.html">
+            
+                    
+                    探索Java命令的实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="IOUse.html">
+            
+                <a href="IOUse.html">
+            
+                    
+                    IO用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="IOModel.html">
+            
+                <a href="IOModel.html">
+            
+                    
+                    IO模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="IoAndNio.html">
+            
+                <a href="IoAndNio.html">
+            
+                    
+                    IO和NIO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="Propgation.html">
+            
+                <a href="Propgation.html">
+            
+                    
+                    事务传播和隔离
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="ThreadLocal.html">
+            
+                <a href="ThreadLocal.html">
+            
+                    
+                    ThreadLocal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="JavaObject.html">
+            
+                <a href="JavaObject.html">
+            
+                    
+                    Java对象是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="JvmHistory.html">
+            
+                <a href="JvmHistory.html">
+            
+                    
+                    Jvm历史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="RuntimeDataModel.html">
+            
+                <a href="RuntimeDataModel.html">
+            
+                    
+                    运行时数据区
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Java JUC
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../juc/JUC.html">
+            
+                <a href="../juc/JUC.html">
+            
+                    
+                    思维导图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../juc/ConcurrentHashMap.html">
+            
+                <a href="../juc/ConcurrentHashMap.html">
+            
+                    
+                    ConcurrentHashMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../juc/ThreadPoolExecutor.html">
+            
+                <a href="../juc/ThreadPoolExecutor.html">
+            
+                    
+                    ThreadPoolExecutor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../juc/ReentrantLock.html">
+            
+                <a href="../juc/ReentrantLock.html">
+            
+                    
+                    ReentrantLock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../juc/ReentrantReadWriteLock.html">
+            
+                <a href="../juc/ReentrantReadWriteLock.html">
+            
+                    
+                    ReentrantReadWriteLock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../juc/FutureTask.html">
+            
+                <a href="../juc/FutureTask.html">
+            
+                    
+                    FutureTask
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../juc/CountDownLatch.html">
+            
+                <a href="../juc/CountDownLatch.html">
+            
+                    
+                    CountDownLatch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../juc/CyclicBarrier.html">
+            
+                <a href="../juc/CyclicBarrier.html">
+            
+                    
+                    CyclicBarrier
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../juc/Semaphore.html">
+            
+                <a href="../juc/Semaphore.html">
+            
+                    
+                    Semaphore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../juc/Automic.html">
+            
+                <a href="../juc/Automic.html">
+            
+                    
+                    Automic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../juc/Condition.html">
+            
+                <a href="../juc/Condition.html">
+            
+                    
+                    Condition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../juc/Exchanger.html">
+            
+                <a href="../juc/Exchanger.html">
+            
+                    
+                    Exchanger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../juc/FutureCallback.html">
+            
+                <a href="../juc/FutureCallback.html">
+            
+                    
+                    FutureCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >HashMap</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="hashmap">HashMap</h1>
+<h3 id="1&#x6570;&#x636E;&#x7ED3;&#x6784;">1.&#x6570;&#x636E;&#x7ED3;&#x6784;</h3>
+<p>HashMap&#x6709;&#x4E2A;&#x9759;&#x6001;&#x5185;&#x90E8;&#x7C7B;Node,&#x5B83;&#x662F;Map&#x5185;&#x90E8;&#x63A5;&#x53E3;Entry&#x7684;&#x5B9E;&#x73B0;&#x3002;&#x5B83;&#x7684;&#x5185;&#x90E8;&#x6709;&#x51E0;&#x4E2A;&#x5C5E;&#x6027;&#x3002;</p>
+<blockquote>
+<p>1.int hash
+2.K key
+3.V value
+4.Node next</p>
+</blockquote>
+<p>&#x540C;&#x65F6;&#x5916;&#x90E8;&#x6709;&#x4E2A;Node&#x6570;&#x7EC4;&#xFF0C;&#x7531;&#x6B64;&#x53EF;&#x89C1;&#xFF0C;&#x4ED6;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;+&#x94FE;&#x8868;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x3002;&#x5BF9;&#x6BD4;&#x8D77;&#x5355;&#x7EAF;&#x7684;&#x6570;&#x7EC4;&#x683C;&#x5F0F;&#x3002;&#x4ED6;&#x6709;&#x4EE5;&#x4E0B;&#x7684;&#x597D;&#x5904;&#x3002;</p>
+<blockquote>
+<p>&#x5BFB;&#x5740;&#x5FEB;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x5355;&#x7EAF;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x901A;&#x8FC7;key&#x53BB;&#x8FDB;&#x884C;&#x5BFB;&#x5740;&#xFF0C;&#x6700;&#x5DEE;&#x7684;&#x60C5;&#x51B5;&#x6BCF;&#x6B21;&#x90FD;&#x9700;&#x8981;&#x904D;&#x5386;&#x6574;&#x4E2A;&#x6570;&#x7EC4;&#x3002;&#x90A3;&#x8FDB;&#x884C;&#x5143;&#x7D20;&#x589E;&#x52A0;&#x548C;&#x83B7;&#x53D6;&#x5143;&#x7D20;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6709;&#x70B9;&#x592A;&#x7CDF;&#x7CD5;&#x4E86;&#x3002;&#x800C;&#x8FD9;&#x79CD;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x68D2;&#x7684;&#x8BBE;&#x8BA1;&#xFF0C;&#x6BCF;&#x6B21;&#x6839;&#x636E;hash&#x6765;&#x786E;&#x5B9A;&#x6570;&#x7EC4;&#x7684;&#x7D22;&#x5F15;&#x3002;&#x7136;&#x540E;&#x5C06;&#x76F8;&#x540C;&#x7D22;&#x5F15;&#x4E0B;&#x7684;&#x5143;&#x7D20;&#x90FD;&#x653E;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x7D22;&#x5F15;&#x4E0B;&#xFF0C;&#x7EC4;&#x6210;&#x94FE;&#x8868;&#x7684;&#x5F62;&#x5F0F;&#x3002;</p>
+</blockquote>
+<p>&#x5F15;&#x7533;&#x800C;&#x6765;&#x7684;&#x662F;&#x4F9D;&#x636E;hash&#x8FDB;&#x884C;&#x4E0B;&#x6807;&#x5B9A;&#x4F4D;&#x65F6;&#x9700;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x8F83;&#x597D;&#x7684;hash&#x7B97;&#x6CD5;&#x3002;&#x8FD9;&#x6837;&#x624D;&#x53EF;&#x80FD;&#x6BD4;&#x8F83;&#x5747;&#x5300;&#x7684;&#x5C06;&#x5143;&#x7D20;&#x653E;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x6570;&#x7EC4;&#x4E0B;&#x6807;&#x4E0A;&#x3002;&#x4E0D;&#x7136;&#x53EF;&#x80FD;&#x52A0;&#x5165;&#x4E00;&#x6279;&#x5143;&#x7D20;&#xFF0C;&#x4ED6;&#x4EEC;&#x5168;&#x90E8;&#x653E;&#x5728;&#x6570;&#x7EC4;[0]&#x8FD9;&#x4E2A;&#x4F4D;&#x7F6E;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x6210;&#x4E86;&#x4E00;&#x4E2A;&#x5B8C;&#x5168;&#x7684;&#x94FE;&#x8868;&#x4E86;&#x3002;&#x90A3;&#x548C;&#x6570;&#x7EC4;&#x4E5F;&#x6CA1;&#x5565;&#x533A;&#x522B;&#x3002;&#x4E00;&#x6837;&#x9020;&#x6210;&#x5BFB;&#x5740;&#x7F13;&#x6162;&#x3002;</p>
+<p>HashMap&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x5173;&#x952E;&#x65B9;&#x6CD5;&#xFF1A; putVal(int hash, K key, V value, boolean onlyIfAbsent, boolean evict) &#x5177;&#x4F53;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>&#x540C;&#x65F6;&#x5B83;&#x8FD8;&#x6709;&#x4E2A;&#x5F88;&#x6709;&#x540D;&#x7684;hash&#x7B97;&#x6CD5;&#x3002;&#x53C8;&#x53EB;&#x6270;&#x52A8;&#x51FD;&#x6570;&#xFF1A;</p>
+<p>hash&#x662F;&#x901A;&#x8FC7;hash(K key)&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x8BA1;&#x7B97;&#x51FA;&#x6765;&#x7684;&#x3002;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x53C8;&#x53EB;&#x6270;&#x52A8;&#x51FD;&#x6570;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x6709;&#x8BB2;&#x7A76;&#x7684;&#x7B97;&#x6CD5;&#xFF0C;&#x5177;&#x4F53;&#x89C1;<a href="https://www.zhihu.com/question/20733617" target="_blank">&#x77E5;&#x4E4E;&#x89E3;&#x7B54;</a>&#x3002;&#x5B83;&#x4E5F;&#x89E3;&#x91CA;&#x4E86;&#x4E3A;&#x4EC0;&#x4E48;hashmap&#x7684;&#x6570;&#x7EC4;&#x957F;&#x5EA6;&#x603B;&#x662F;2&#x7684;&#x6574;&#x6570;&#x6B21;&#x5E42;&#x3002;&#x5927;&#x6982;&#x7684;&#x610F;&#x601D;&#x5C31;&#x662F;&#x6BCF;&#x6B21;&#x62FF;&#xFF08;length-1&#xFF09;&amp; hash&#x8BA1;&#x7B97;&#x4E0B;&#x6807;&#x7684;&#x65F6;&#x5019;&#x3002;&#x5982;&#x679C;&#x5355;&#x7EAF;&#x662F;&#x8FD9;&#x6837;&#x8BA1;&#x7B97;&#xFF0C;length&#x8F83;&#x5C0F;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x5728;&#x53D6;hash&#x503C;&#x7684;&#x6700;&#x540E;&#x51E0;&#x4F4D;&#xFF0C;&#x518D;&#x52A0;&#x4E0A;&#x5047;&#x5982;hash&#x672C;&#x8EAB;&#x5C31;&#x505A;&#x7684;&#x4E0D;&#x591F;&#x597D;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;hash&#x5448;&#x73B0;&#x6709;&#x89C4;&#x5F8B;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x5C31;&#x9020;&#x6210;hash&#x78B0;&#x649E;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x4E0A;&#x8FF0;&#x7684;&#x6700;&#x7CDF;&#x7CD5;&#x60C5;&#x51B5;&#x4E0B;&#x5168;&#x90E8;&#x5728;&#x6570;&#x7EC4;[0]&#x8FD9;&#x4E2A;&#x4F4D;&#x7F6E;&#x50A8;&#x5B58;&#x5143;&#x7D20;&#x3002;&#x800C;&#x6270;&#x52A8;&#x51FD;&#x6570;&#x4E2D;&#x62FF;hashcode&#x7684;&#x9AD8;16&#x4F4D;&#x548C;hashcode&#x505A;&#x5F02;&#x6216;&#x9884;&#x7B97;&#xFF0C;&#x8FD9;&#x6837;&#x968F;&#x673A;&#x6027;&#x5C31;&#x4F1A;&#x5F88;&#x597D;&#x3002;&#x5373;&#x4FBF;&#x662F;&#x53D6;&#x6700;&#x540E;&#x51E0;&#x4F4D;&#xFF0C;&#x4E5F;&#x80FD;&#x4FDD;&#x8BC1;&#x6709;&#x5F88;&#x597D;&#x7684;&#x5747;&#x5300;&#x5206;&#x5E03;&#x60C5;&#x51B5;&#x3002;&#x540C;&#x65F6;tableSizeFor&#x65B9;&#x6CD5;&#x4FDD;&#x8BC1;&#x4E86;&#x968F;&#x673A;&#x957F;&#x5EA6;&#x7684;capacity&#x4F1A;&#x88AB;&#x6574;&#x6210;2&#x7684;&#x6574;&#x6570;&#x6B21;&#x5E42;&#x3002;&#x6B64;&#x65B9;&#x6CD5;&#x5728;&#x4F20;&#x5165;initCapacity&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x548C;putEntrys&#x6279;&#x91CF;&#x65B0;&#x589E;&#x65F6;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x3002;</p>
+<h3 id="2&#x6269;&#x5BB9;">2.&#x6269;&#x5BB9;</h3>
+<p>&#x7531;&#x4E8E;HashMap&#x672C;&#x8EAB;&#x7279;&#x6B8A;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x5B83;&#x5373;&#x4FBF;&#x5728;&#x9ED8;&#x8BA4;&#x503C;&#x53EA;&#x6709;&#x6570;&#x7EC4;&#x957F;&#x5EA6;&#x53EA;&#x6709;16&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x56E0;&#x4E3A;&#x6BCF;&#x4E2A;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x90FD;&#x4FDD;&#x5B58;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x94FE;&#x8868;&#xFF0C;&#x90A3;&#x5B83;&#x7406;&#x8BBA;&#x4E0A;&#x5C31;&#x53EF;&#x4EE5;&#x5B58;&#x50A8;&#x65E0;&#x9650;&#x5927;&#x7684;&#x5143;&#x7D20;&#x3002;&#x4F46;&#x662F;&#x8FD9;&#x53C8;&#x5F15;&#x8D77;&#x4E86;&#x5982;&#x679C;&#x4F60;&#x94FE;&#x8868;&#x7684;&#x957F;&#x5EA6;&#x8FC7;&#x957F;&#xFF0C;&#x90A3;&#x540C;&#x6837;&#x4F1A;&#x9020;&#x6210;&#x5BFB;&#x5740;&#x7F13;&#x6162;&#xFF0C;&#x8FD9;&#x6837;&#x6027;&#x80FD;&#x5C31;&#x4F1A;&#x975E;&#x5E38;&#x5DEE;&#x3002;&#x90A3;HashMap&#x505A;&#x51FA;&#x7684;&#x4E00;&#x4E2A;&#x4F18;&#x5316;&#x5C31;&#x662F;&#x7A7A;&#x95F4;&#x6362;&#x65F6;&#x95F4;&#xFF0C;&#x5B83;&#x5982;&#x679C;&#x5143;&#x7D20;&#x7684;&#x9608;&#x503C;&#x5230;&#x8FBE;&#x4E86;&#x4E00;&#x5B9A;&#x754C;&#x9650;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x8FDB;&#x884C;&#x6570;&#x7EC4;&#x6269;&#x5BB9;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x5143;&#x7D20;&#x91CD;&#x65B0;hash&#x653E;&#x7F6E;&#x3002;&#x8FD9;&#x6837;&#x5C31;&#x4FDD;&#x8BC1;&#x4E86;&#x6BCF;&#x6B21;&#x901A;&#x8FC7;hash&#x5BFB;&#x5740;&#x5230;&#x5177;&#x4F53;&#x6570;&#x7EC4;&#x4E0B;&#x6807;&#x7136;&#x540E;&#x904D;&#x5386;&#x4E0B;&#x6807;&#x4E0A;&#x90A3;&#x4E2A;&#x94FE;&#x8868;&#x7684;&#x957F;&#x5EA6;&#x90FD;&#x80FD;&#x63A7;&#x5236;&#x5728;&#x4E00;&#x5B9A;&#x8303;&#x56F4;&#x5185;&#x3002;&#x4EE5;&#x6B64;&#x63A7;&#x5236;&#x65F6;&#x95F4;&#x3002;&#x4F18;&#x5316;&#x6027;&#x80FD;&#x3002;
+HashMap&#x5177;&#x4F53;&#x7684;&#x6269;&#x5BB9;&#x65B9;&#x6CD5;&#x53EB;resize()&#x3002;&#x6211;&#x4EEC;&#x53EA;&#x8981;&#x770B;&#x54EA;&#x51E0;&#x4E2A;&#x5730;&#x65B9;&#x518D;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x5C31;&#x80FD;&#x77E5;&#x9053;&#x5B83;&#x5728;&#x54EA;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x4F1A;&#x8FDB;&#x884C;&#x6269;&#x5BB9;&#x3002;</p>
+<p>&#x5982;&#x4E0A;&#x56FE;&#xFF0C;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#x5728;&#x6279;&#x91CF;&#x589E;&#x52A0;&#x5143;&#x7D20;&#x7684;&#x65F6;&#x3001;&#x589E;&#x52A0;&#x5355;&#x4E2A;&#x5143;&#x7D20;&#x7684;putVal&#x65B9;&#x6CD5;&#x4E2D;&#xFF08;&#x6570;&#x7EC4;&#x521D;&#x59CB;&#x5316;&#x548C;size&#x5927;&#x4E8E;threshold&#x5404;&#x4E00;&#x6B21;&#xFF09;&#x3001;&#x5728;&#x6811;&#x72B6;&#x5316;&#x7684;&#x65F6;&#x5019;&#xFF08;java8&#x7684;&#x4E00;&#x4E2A;&#x4F18;&#x5316;&#xFF0C;&#x5728;&#x4E00;&#x5B9A;&#x60C5;&#x51B5;&#x4E0B;&#x4F1A;&#x8FDB;&#x884C;&#x6811;&#x72B6;&#x5316;&#x64CD;&#x4F5C;&#x5C06;&#x539F;&#x672C;&#x7684;&#x94FE;&#x8868;&#x8F6C;&#x5316;&#x4E3A;&#x7EA2;&#x9ED1;&#x6811;&#xFF09;&#x7B49;&#x8FD9;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x90FD;&#x8FDB;&#x884C;&#x4E86;&#x6269;&#x5BB9;&#x673A;&#x5236;&#x3002;threshold&#x662F;HashMap&#x81EA;&#x5DF1;&#x7EF4;&#x62A4;&#x7684;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x7528;&#x6765;&#x4F5C;&#x4E3A;&#x89E6;&#x53D1;&#x6269;&#x5BB9;&#x7684;&#x4F9D;&#x636E;&#xFF0C;&#x8DDF;&#x4E0B;&#x4EE3;&#x7801;&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x770B;&#x5230;threshold&#x662F;&#x5728;&#x521D;&#x59CB;&#x5316;&#x8C03;resize&#x65B9;&#x6CD5;&#x4E2D;&#x8FDB;&#x884C;&#x7684;&#x7B2C;&#x4E00;&#x6B21;&#x8D4B;&#x503C;&#x3002;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>&#x7B2C;&#x4E00;&#x6B21;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x8D4B;&#x503C;&#x4E86;&#x5BB9;&#x91CF;&#x548C;&#x6269;&#x5BB9;&#x9608;&#x503C;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;defaultLoadFactor*defaultInitialCapacity&#x4E5F;&#x5C31;&#x662F;16&#x4E58;0.75&#x7B49;&#x4E8E;12&#x3002;&#x540C;&#x65F6;&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#x8D70;&#x4E0A;&#x9762; newCap = oldCap &lt;&lt; 1&#x8FD9;&#x6761;&#x5206;&#x652F;&#x5C06;&#x6570;&#x7EC4;&#x5BB9;&#x91CF;&#x6269;&#x4E3A;&#x4E24;&#x500D;&#xFF0C;&#x518D;&#x5728;&#x4E0B;&#x9762;&#x65B0;new&#x4E00;&#x4E2A;Node(newCap)&#x7684;&#x6570;&#x7EC4;&#x4F5C;&#x4E3A;&#x6269;&#x5BB9;&#x540E;&#x7684;&#x6570;&#x7EC4;&#x3002;&#x4E4B;&#x540E;&#x904D;&#x5386;&#x65E7;&#x6570;&#x7EC4;&#x5C06;&#x5143;&#x7D20;&#x8F6C;&#x79FB;&#x5230;&#x65B0;&#x6570;&#x7EC4;&#x4E2D;&#x3002;</p>
+<h3 id="3&#x6811;&#x72B6;&#x5316;">3.&#x6811;&#x72B6;&#x5316;</h3>
+<p>HashMap&#x4E2D;&#x5177;&#x4F53;&#x65B9;&#x6CD5;&#x53EB;treeifyBin(Node<k,v>[] tab, int hash)</k,v></p>
+<p>&#x7531;&#x4E0A;&#x56FE;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x5B83;&#x5728;&#x589E;&#x52A0;&#x5143;&#x7D20;&#x7B49;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x9009;&#x62E9;&#x5C06;&#x94FE;&#x8868;&#x6811;&#x72B6;&#x5316;&#x3002;&#x4F46;&#x662F;&#x5728;&#x6811;&#x72B6;&#x8BDD;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53C8;&#x4F1A;&#x53BB;&#x5224;&#x65AD;length&#x662F;&#x5426;&#x662F;&#x5C0F;&#x4E8E;64&#xFF0C;&#x5982;&#x679C;&#x5C0F;&#x4E8E;64&#x7684;&#x8BDD;&#xFF0C;&#x4ED6;&#x8BA4;&#x4E3A;&#x6269;&#x5BB9;&#x53EF;&#x80FD;&#x6BD4;&#x6811;&#x72B6;&#x5316;&#x66F4;&#x6709;&#x610F;&#x4E49;&#x3002;
+&#x800C;&#x8DDF;&#x4E0B;&#x4EE3;&#x7801;&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x77E5;&#x9053;&#x5728;&#x94FE;&#x8868;&#x957F;&#x5EA6;&#x5230;&#x8FBE;8&#x7684;&#x8282;&#x70B9;&#x65F6;&#xFF0C;&#x4F1A;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x3002;</p>
+<h3 id="4&#x7EBF;&#x7A0B;&#x4E0D;&#x5B89;&#x5168;">4.&#x7EBF;&#x7A0B;&#x4E0D;&#x5B89;&#x5168;</h3>
+<p>&#x6700;&#x7B80;&#x5355;&#x7684;&#x4E00;&#x70B9;&#xFF0C;size&#x662F;&#x7C7B;&#x53D8;&#x91CF;&#x800C;&#x975E;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x64CD;&#x4F5C;putVal&#x7684;&#x65F6;&#x5019;&#xFF0C;++size&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x80AF;&#x5B9A;&#x662F;&#x7EBF;&#x7A0B;&#x4E0D;&#x5B89;&#x5168;&#x7684;&#x3002;&#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;&#x5047;&#x5982;&#x4E24;&#x4E2A;&#x7EBF;&#x7A0B;&#x5BF9;&#x540C;&#x4E00;&#x4E2A;map&#x8FDB;&#x884C;put&#x64CD;&#x4F5C;&#xFF0C;&#x8D70;&#x5230;putVal&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;hash&#x8BA1;&#x7B97;&#x51FA;&#x7684;&#x6570;&#x7EC4;&#x4E0B;&#x6807;&#x53C8;&#x6070;&#x597D;&#x4E00;&#x81F4;&#xFF08;&#x4EA7;&#x751F;hash&#x78B0;&#x649E;&#xFF09;&#xFF0C;&#x6B64;&#x65F6;&#x7EE7;&#x7EED;&#x5F80;&#x4E0B;&#x8D70;&#xFF0C;&#x8D70;&#x5230;&#x5FAA;&#x73AF;binCount&#x4E2D;&#xFF0C;A&#x7EBF;&#x7A0B;&#x6302;&#x8D77;&#xFF0C;&#x800C;B&#x7EBF;&#x7A0B;put&#x6210;&#x529F;&#x3002;&#x4E4B;&#x540E;A&#x7EBF;&#x7A0B;&#x88AB;&#x5524;&#x9192;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#xFF0C;&#x6B64;&#x65F6;p.next = new Node(hash...)&#x5C31;&#x4F1A;&#x8986;&#x76D6;&#x6389;B&#x7EBF;&#x7A0B;&#x65B0;&#x589E;&#x7684;&#x6570;&#x636E;&#x3002;&#x4ECE;&#x800C;&#x9020;&#x6210;&#x6570;&#x636E;&#x88AB;&#x8986;&#x76D6;&#x3002; &#x5F53;&#x7136;jdk7&#x4E2D;&#x8FD8;&#x6709;&#x9020;&#x6210;&#x5FAA;&#x73AF;&#x94FE;&#x8868;&#x3001;&#x5143;&#x7D20;&#x4E22;&#x5931;&#x7684;&#x60C5;&#x51B5;&#x3002;&#x4E3B;&#x8981;&#x662F;jdk7&#x4E2D;&#x6709;&#x4E2A;transfer&#x65B9;&#x6CD5;&#xFF0C;&#x4ED6;&#x7684;&#x94FE;&#x8868;&#x5934;&#x63D2;&#x5165;&#x6CD5;&#x4F1A;&#x6709;&#x4E00;&#x4E9B;&#x95EE;&#x9898;&#x3002;</p>
+<h3 id="5&#x603B;&#x7ED3;">5.&#x603B;&#x7ED3;</h3>
+<blockquote>
+<p>!&#x6574;&#x4E2A;HashMap&#x8FD8;&#x662F;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x8BBE;&#x8BA1;&#x7684;&#xFF0C;&#x4ED6;&#x7684;&#x6270;&#x52A8;&#x51FD;&#x6570;&#x548C;&#x6269;&#x5BB9;&#x9608;&#x503C;&#x8FD9;&#x4E9B;&#x90FD;&#x662F;&#x6709;&#x8BF4;&#x6CD5;&#x7684;&#x3002;&#x800C;&#x81EA;&#x5DF1;&#x624B;&#x64B8;&#x7684;hash&#x96C6;&#x5408;&#x6309;&#x90E8;&#x5C31;&#x73ED;&#x7684;&#x6765;&#x7528;&#x6570;&#x7EC4;&#x5B9E;&#x73B0;&#x7684;&#x8BDD;&#x5C31;&#x4F1A;&#x53D1;&#x73B0;&#x6027;&#x80FD;&#x8FD9;&#x4E9B;&#x65B9;&#x9762;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-java">package com.honghongwen.map;
+
+import java.util.Objects;
+
+public class Map&lt;K, V&gt; implements IMap&lt;K, V&gt; {
+
+    private static final int DEFAULT_SIZE = 10;
+
+    private Element[] elements;
+
+    private int size;
+
+    public Map() {
+        elements = new Element[DEFAULT_SIZE];
+    }
+
+    @SuppressWarnings(&quot;unchecked&quot;)
+    @Override
+    public void set(K k, V v) {
+        for (int i = 0; i &lt; elements.length; i++) {
+            Element&lt;K, V&gt; element = elements[i];
+            if (element != null) {
+                if (k.equals(element.getKey())) {
+                    element.setValue(v);
+                    return;
+                }
+            }
+        }
+
+        Element&lt;Object, Object&gt; element = new Element&lt;&gt;();
+        element.setKey(k);
+        element.setValue(v);
+        elements[size++] = element;
+    }
+
+    @SuppressWarnings(&quot;unchecked&quot;)
+    @Override
+    public V get(K k) {
+        for (int i = 0; i &lt; elements.length; i++) {
+            Element&lt;K, V&gt; element = elements[i];
+            if (element != null) {
+                if (Objects.equals(k, element.getKey())) {
+                    return element.getValue();
+                }
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public void delete(K k) {
+
+    }
+
+    @Override
+    public int size() {
+        return size;
+    }
+
+    private static class Element&lt;K, V&gt; {
+
+        private K key;
+
+        private V value;
+
+        public K getKey() {
+            return key;
+        }
+
+        public void setKey(K key) {
+            this.key = key;
+        }
+
+        public V getValue() {
+            return value;
+        }
+
+        public void setValue(V value) {
+            this.value = value;
+        }
+    }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ArrayList.html" class="navigation navigation-prev " aria-label="Previous page: ArrayList">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="BitCompute.html" class="navigation navigation-next " aria-label="Next page: BitCompute">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"HashMap","level":"1.3.2","depth":2,"next":{"title":"BitCompute","level":"1.3.3","depth":2,"path":"java/BitCompute.md","ref":"java/BitCompute.md","articles":[]},"previous":{"title":"ArrayList","level":"1.3.1","depth":2,"path":"java/ArrayList.md","ref":"java/ArrayList.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-highlight","-search","-sharing","-livereload","-font-settings","-code","-lunr","-search-plus","-mermaid-gb3","-lightbox","-copy-code-button","-tbfed-pagefooter","-valine","insert-logo","hide-element","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-element":{"elements":[".gitbook-link"]},"insert-logo":{"style":"background: none; max-height: 120px; min-height: 120px","url":"https://raw.githubusercontent.com/honghongwen/gitBook/gh-pages/images/subscribe.png"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"fengwen","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"FENGWEN WIKI","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"回到首页":"https://honghongwen.github.io/webBook"}},"gitbook":"*","description":"FENGWEN WIKI","extension":null},"file":{"path":"java/HashMap.md","mtime":"2023-03-24T05:56:55.313Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-03-31T01:54:45.196Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

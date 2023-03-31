@@ -1,0 +1,701 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>CyclicBarrier · FENGWEN WIKI</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="fengwen">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Semaphore.html" />
+    
+    
+    <link rel="prev" href="CountDownLatch.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://honghongwen.github.io/webBook" target="_blank" class="custom-link">回到首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    技术文档
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../docs/git.html">
+            
+                <a href="../docs/git.html">
+            
+                    
+                    Git指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../docs/rabbitMq.html">
+            
+                <a href="../docs/rabbitMq.html">
+            
+                    
+                    RabbitMq的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../docs/netty.html">
+            
+                <a href="../docs/netty.html">
+            
+                    
+                    Netty的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../docs/code.html">
+            
+                <a href="../docs/code.html">
+            
+                    
+                    编程的智慧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../java/ArrayList.html">
+            
+                <a href="../java/ArrayList.html">
+            
+                    
+                    ArrayList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../java/HashMap.html">
+            
+                <a href="../java/HashMap.html">
+            
+                    
+                    HashMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../java/BitCompute.html">
+            
+                <a href="../java/BitCompute.html">
+            
+                    
+                    BitCompute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../java/Bit.html">
+            
+                <a href="../java/Bit.html">
+            
+                    
+                    Bit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../java/BitMap.html">
+            
+                <a href="../java/BitMap.html">
+            
+                    
+                    BitMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../java/Byte.html">
+            
+                <a href="../java/Byte.html">
+            
+                    
+                    Byte
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../java/Encrypt.html">
+            
+                <a href="../java/Encrypt.html">
+            
+                    
+                    Encrypt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../java/ImplementsJava.html">
+            
+                <a href="../java/ImplementsJava.html">
+            
+                    
+                    探索Java命令的实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../java/IOUse.html">
+            
+                <a href="../java/IOUse.html">
+            
+                    
+                    IO用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../java/IOModel.html">
+            
+                <a href="../java/IOModel.html">
+            
+                    
+                    IO模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../java/IoAndNio.html">
+            
+                <a href="../java/IoAndNio.html">
+            
+                    
+                    IO和NIO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../java/Propgation.html">
+            
+                <a href="../java/Propgation.html">
+            
+                    
+                    事务传播和隔离
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../java/ThreadLocal.html">
+            
+                <a href="../java/ThreadLocal.html">
+            
+                    
+                    ThreadLocal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../java/JavaObject.html">
+            
+                <a href="../java/JavaObject.html">
+            
+                    
+                    Java对象是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../java/JvmHistory.html">
+            
+                <a href="../java/JvmHistory.html">
+            
+                    
+                    Jvm历史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="../java/RuntimeDataModel.html">
+            
+                <a href="../java/RuntimeDataModel.html">
+            
+                    
+                    运行时数据区
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Java JUC
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="JUC.html">
+            
+                <a href="JUC.html">
+            
+                    
+                    思维导图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="ConcurrentHashMap.html">
+            
+                <a href="ConcurrentHashMap.html">
+            
+                    
+                    ConcurrentHashMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="ThreadPoolExecutor.html">
+            
+                <a href="ThreadPoolExecutor.html">
+            
+                    
+                    ThreadPoolExecutor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="ReentrantLock.html">
+            
+                <a href="ReentrantLock.html">
+            
+                    
+                    ReentrantLock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="ReentrantReadWriteLock.html">
+            
+                <a href="ReentrantReadWriteLock.html">
+            
+                    
+                    ReentrantReadWriteLock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="FutureTask.html">
+            
+                <a href="FutureTask.html">
+            
+                    
+                    FutureTask
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="CountDownLatch.html">
+            
+                <a href="CountDownLatch.html">
+            
+                    
+                    CountDownLatch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.8" data-path="CyclicBarrier.html">
+            
+                <a href="CyclicBarrier.html">
+            
+                    
+                    CyclicBarrier
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="Semaphore.html">
+            
+                <a href="Semaphore.html">
+            
+                    
+                    Semaphore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="Automic.html">
+            
+                <a href="Automic.html">
+            
+                    
+                    Automic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="Condition.html">
+            
+                <a href="Condition.html">
+            
+                    
+                    Condition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="Exchanger.html">
+            
+                <a href="Exchanger.html">
+            
+                    
+                    Exchanger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="FutureCallback.html">
+            
+                <a href="FutureCallback.html">
+            
+                    
+                    FutureCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >CyclicBarrier</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="cyclicbarrier">CyclicBarrier</h1>
+<blockquote>
+<p>&#x8FD9;&#x4E2A;&#x53EF;&#x662F;&#x6A21;&#x62DF;&#x5E76;&#x53D1;&#x7684;&#x795E;&#x5947;&#xFF0C;&#x540C;&#x6837;&#x662F;juc&#x4E2D;&#x7684;&#x5C0F;&#x5DE5;&#x5177;&#xFF0C;&#x548C;CountDownLatch&#x76F8;&#x53CD;&#x7684;&#x662F;&#x5B83;&#x8981;&#x6240;&#x6709;&#x7EBF;&#x7A0B;await.&#x76F4;&#x5230;&#x6240;&#x6709;&#x7EBF;&#x7A0B;&#x90FD;&#x5230;&#x4E86;await&#x70B9;&#x5230;&#x65F6;&#x5019;&#x624D;&#x4F1A;&#x4E00;&#x8D77;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x7406;&#x89E3;&#x8D77;&#x6765;&#x4E5F;&#x5F88;&#x7B80;&#x5355;&#x3002;<a href="https://www.jianshu.com/p/4ef4bbf01811" target="_blank">&#x793A;&#x4F8B;</a></p>
+<p>&#x6E90;&#x7801;&#xFF1A;
+&#x5B83;&#x7684;&#x5B9E;&#x73B0;&#x4E5F;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x521D;&#x59CB;&#x5316;&#x4E86;&#x4E2A;count&#x503C;&#x3002;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x4E2D;&#x6BCF;&#x6B21;await&#x65B9;&#x6CD5;&#x4F1A;&#x7528;&#x5230;lock&#x3002;
+&#x540C;&#x65F6;&#x4E5F;&#x4F1A;&#x7528;&#x5230;condition&#x3002;&#x6BCF;&#x6B21;await&#x7684;&#x65F6;&#x5019;&#x52A0;&#x9501;&#xFF0C;&#x7136;&#x540E;--count&#x3002;&#x4E4B;&#x540E;condition.await()&#x8BA9;&#x6B64;&#x7EBF;&#x7A0B;&#x7B49;&#x5F85;&#x3002; &#x76F4;&#x5230;&#x89E6;&#x53D1;count==0&#x8FD9;&#x4E2A;&#x9608;&#x503C;&#x540E;&#xFF0C;&#x8BF4;&#x660E;&#x6240;&#x6709;&#x7EBF;&#x7A0B;&#x90FD;&#x5728;await&#x4E86;&#x3002;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x5148;&#x67E5;&#x770B;&#x662F;&#x5426;&#x6709;&#x94A9;&#x5B50;&#x7EBF;&#x7A0B;&#xFF0C;&#x5982;&#x679C;&#x6709;&#xFF0C;&#x5148;&#x6267;&#x884C;&#x5B83;&#xFF08;&#x4FDD;&#x5B58;&#x4E86;&#x5BF9;&#x5E94;&#x7684;runnable&#x7136;&#x540E;&#x8C03;&#x7528;run&#x65B9;&#x6CD5;&#xFF09;&#x3002;&#x518D;&#x4E4B;&#x540E;&#x5524;&#x9192;&#x6240;&#x6709;&#x7EBF;&#x7A0B;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8C03;&#x7528;condition.signalAll&#x65B9;&#x6CD5;&#x3002;</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="CountDownLatch.html" class="navigation navigation-prev " aria-label="Previous page: CountDownLatch">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Semaphore.html" class="navigation navigation-next " aria-label="Next page: Semaphore">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CyclicBarrier","level":"1.4.8","depth":2,"next":{"title":"Semaphore","level":"1.4.9","depth":2,"path":"juc/Semaphore.md","ref":"juc/Semaphore.md","articles":[]},"previous":{"title":"CountDownLatch","level":"1.4.7","depth":2,"path":"juc/CountDownLatch.md","ref":"juc/CountDownLatch.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-highlight","-search","-sharing","-livereload","-font-settings","-code","-lunr","-search-plus","-mermaid-gb3","-lightbox","-copy-code-button","-tbfed-pagefooter","-valine","insert-logo","hide-element","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-element":{"elements":[".gitbook-link"]},"insert-logo":{"style":"background: none; max-height: 120px; min-height: 120px","url":"https://raw.githubusercontent.com/honghongwen/gitBook/gh-pages/images/subscribe.png"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"fengwen","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"FENGWEN WIKI","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"回到首页":"https://honghongwen.github.io/webBook"}},"gitbook":"*","description":"FENGWEN WIKI","extension":null},"file":{"path":"juc/CyclicBarrier.md","mtime":"2023-03-24T06:03:18.620Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-03-31T01:54:45.196Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
